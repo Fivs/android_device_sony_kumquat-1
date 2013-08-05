@@ -17,6 +17,10 @@ hwui.render_dirty_regions=false
 # Enable ADB persistence
 persist.service.adb.enable=1
 
+# Disable red border
+persist.sys.strictmode.disable=1
+persist.sys.strictmode.visual=0
+
 # System props for SOLS
 ro.semc.sols.product-code=105
 ro.semc.sols.company-code=5
@@ -34,6 +38,10 @@ ro.telephony.call_ring.multiple=false
 # prop to indicate what kind of external memory the product have.
 ro.semc.product.user_storage=emmc_only
 ro.build.characteristics=nosdcard
+
+#RIL
+
+ro.telephony.ril_class=SonyU8500RIL
 
 # NFC
 ro.nfc.on.default=false
